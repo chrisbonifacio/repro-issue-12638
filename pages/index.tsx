@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "@aws-amplify/ui-react/styles.css";
 import { post } from "aws-amplify/api";
-import { useEffect } from "react";
 // import { API } from "aws-amplify";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -33,10 +32,6 @@ function Home() {
       method: "post",
     });
   };
-
-  useEffect(() => {
-    // fetchUserGroup();
-  }, []);
 
   return (
     <main
